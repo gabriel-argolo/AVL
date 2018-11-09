@@ -6,10 +6,10 @@ public class No {
 	private int chave;
 	private int blnc;
 
-	public No(int k) {
+	public No(int i) {
 		setEsq(setDir(setPai(null)));
 		setBlnc(0);
-		setChave(k);
+		setChave(i);
 	}
 
 	@Override
