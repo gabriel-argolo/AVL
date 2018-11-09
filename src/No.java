@@ -1,18 +1,17 @@
 public class No {
   
-	private No esquerda;
-	private No direita;
+	private No esq;
+	private No dir;
 	private No pai;
 	private int chave;
 	private int blnc;
 
 	public No(int k) {
-		setEsquerda(setDireita(setPai(null)));
+		setEsq(setDir(setPai(null)));
 		setBlnc(0);
 		setChave(k);
 	}
-	
-	
+
 	@Override
 	public String toString() {
 		return Integer.toString(getChave());
@@ -43,20 +42,20 @@ public class No {
 		return pai;
 	}
 
-	public No getDireita() {
-		return direita;
+	public No getDir() {
+		return dir;
 	}
 
-	public No setDireita(No direita) {
-		this.direita = direita;
-		return direita;
+	public No setDir(No direito) {
+		this.dir = direito;
+		return direito;
 	}
 
-	public No getEsquerda() {
-		return esquerda;
+	public No getEsq() {
+		return esq;
 	}
 
-	public void setEsquerda(No esquerda) {
-		this.esquerda = esquerda;
+	public void setEsq(No esquerdo) {
+		this.esq = esquerdo;
 	}	
 }
