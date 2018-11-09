@@ -1,1 +1,5 @@
 /bin/
+/build/
+/nbproject/
+/test/
+/dist/
